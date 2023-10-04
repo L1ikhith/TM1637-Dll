@@ -3,7 +3,8 @@ This library has TM1637 dll's to communicate between with Tiva C series(TM4C123G
 
 # Introduction 
 Created TM1637 dll to use in different applications it has the following functions 
-These are the frequently used functions
+
+
 # Functions
 * TM1637Init  - to initialize the port and pins
 * setBrightness - to change brightness
