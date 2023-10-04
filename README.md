@@ -4,10 +4,9 @@ This library has TM1637 dll's to communicate between with Tiva C series(TM4C123G
 # Introduction 
 Created TM1637 dll to use in different applications it has the following functions 
 These are the frequently used functions
-setSegments - Set the raw value of the segments of each digit 
-showNumberDec - Display a decimal number 
-showNumberDecEx - Display a decimal number with decimal points or colon 
-setBrightness - Sets the brightness of the display
-delay_ms - to set delay 
-Clear
-Init
+# Functions
+* TM1637Init  - to initialize the port and pins
+* setBrightness - to change brightness
+* clear - to clear the display
+* showNumberDec - display decimal number 
+* _delay_ms - to create delay (millisecs)
