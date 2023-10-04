@@ -1,0 +1,193 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "The enum type 'IRQn_Type' is unscoped. Prefer 'enum class' over 'enum' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/10342702/Desktop/python codes/Labview C++/TM1637Library/TM1637Library/core_cm4.h"
+                },
+                "region": {
+                  "startLine": 1628,
+                  "startColumn": 22,
+                  "endLine": 1628,
+                  "endColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "NVIC_EnableIRQ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C33010",
+          "message": {
+            "text": "Unchecked lower bound for enum IRQn used as index.."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/10342702/Desktop/python codes/Labview C++/TM1637Library/TM1637Library/core_cm4.h"
+                },
+                "region": {
+                  "startLine": 1704,
+                  "startColumn": 5,
+                  "endLine": 1704,
+                  "endColumn": 127
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "NVIC_SetPriority",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C33010",
+          "message": {
+            "text": "Unchecked lower bound for enum IRQn used as index.."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/10342702/Desktop/python codes/Labview C++/TM1637Library/TM1637Library/core_cm4.h"
+                },
+                "region": {
+                  "startLine": 1727,
+                  "startColumn": 5,
+                  "endLine": 1727,
+                  "endColumn": 92
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "NVIC_GetPriority",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.29.30136.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00F0D1C0 -allChunksReserved -il C:\\Users\\10342702\\AppData\\Local\\Temp\\_CL_eb8cd634ast -typedil -f main.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1929 -D_MSC_FULL_VER=192930136 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -I C:\\Users\\10342702\\Desktop\\python codes\\Labview C++\\TM1637Library\\TM1637Library -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -DTM1637LIBRARY_EXPORTS -D_WINDOWS -D_USRDLL -D_WINDLL -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -Yupch.h -FpDebug\\TM1637Library.pch -FoDebug\\main.obj -FdDebug\\vc142.pdb -external:W 3 -Gd -analyze:projectdirectory C:\\Users\\10342702\\Desktop\\python codes\\Labview C++\\TM1637Library\\TM1637Library -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Tools\\MSVC\\14.29.30133\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -external:I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/10342702/Desktop/python codes/Labview C++/TM1637Library/TM1637Library/core_cm4.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "e2688e6e0e365c6a33ec181b85627161"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/10342702/desktop/python codes/labview c++/tm1637library/tm1637library/main.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "7602fc639462510b44f68cc86a620955"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/10342702/desktop/python codes/labview c++/tm1637library/tm1637library/pch.h"
+          },
+          "hashes": {
+            "md5": "f8592ae4100aa66c5a05b79c3c176525"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/10342702/desktop/python codes/labview c++/tm1637library/tm1637library/framework.h"
+          },
+          "hashes": {
+            "md5": "e6d3d70db8312c6917132bed5c610438"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/10342702/desktop/python codes/labview c++/tm1637library/tm1637library/tm1637.h"
+          },
+          "hashes": {
+            "md5": "4a1d9b8702a7a4a0e54186bd70605858"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/10342702/desktop/python codes/labview c++/tm1637library/tm1637library/tm4c123gh6pm.h"
+          },
+          "hashes": {
+            "md5": "b50e42943ef4c7ca037b81705ca3e576"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/10342702/desktop/python codes/labview c++/tm1637library/tm1637library/core_cminstr.h"
+          },
+          "hashes": {
+            "md5": "15fb8560cb70fe05082021d7cc62acc7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/10342702/desktop/python codes/labview c++/tm1637library/tm1637library/core_cmfunc.h"
+          },
+          "hashes": {
+            "md5": "3296137a1b9f61762feb0af7f3d61837"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/10342702/desktop/python codes/labview c++/tm1637library/tm1637library/core_cmsimd.h"
+          },
+          "hashes": {
+            "md5": "1058cc45124b3439981389ef8ce54866"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/10342702/desktop/python codes/labview c++/tm1637library/tm1637library/system_tm4c123.h"
+          },
+          "hashes": {
+            "md5": "7642985637fc3d33c7640bec380ff4a2"
+          }
+        }
+      ]
+    }
+  ]
+}
